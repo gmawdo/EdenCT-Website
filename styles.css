@@ -1,0 +1,149 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  /* The .header class is not used, so it's removed */
+  
+  /* Navigation styles */
+  nav {
+    background-color: #d2d0d0;
+    padding: 20px 0;
+  }
+  
+  nav .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  nav h1 {
+    margin-bottom: 15px;
+  }
+  
+  /* nav ul and nav a styles are removed as there's no navigation menu in the HTML */
+  
+  /* Hero section styles */
+  .hero {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #d2d0d0;
+  }
+  
+  .hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  /* Two-column grid styles */
+  .two-column-grid .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  
+  .two-column-grid .grid-item {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  /* Three-column grid styles */
+  .three-column-grid .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  
+  .three-column-grid .grid-item {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  /* Footer styles */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60px;
+    background-color: #d2d0d0;
+  }
+  
+  .footer-content p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  /* Section title styles */
+  .section-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 992px) {
+    .three-column-grid .container {
+      flex-wrap: wrap;
+    }
+    
+    .three-column-grid .grid-item {
+      flex-basis: calc(50% - 15px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .two-column-grid .container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .three-column-grid .container {
+      flex-direction: column;
+    }
+    
+    .three-column-grid .grid-item {
+      flex-basis: 100%;
+    }
+  }
+  
+  /* Removed @media (max-width: 600px) for nav ul as it's not used */
+  
+  /* New styles for elements present in HTML but not in original CSS */
+  .cta-container {
+    /* Add styles for the CTA container if needed */
+  }
+  
+  .price {
+    /* Add styles for the price element if needed */
+  }
+  
+  .cta-button {
+    /* Add styles for the CTA buttons if needed */
+  }
+  
+  /* Styles for the contacts banner added by JavaScript */
+  .contacts-banner {
+    /* Add styles for the contacts banner if needed */
+  }
