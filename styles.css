@@ -1,14 +1,15 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #000;
+    color: #B9C7D3;
   }
   
   .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #15202A;
   }
   
   /* Header styles */
@@ -16,7 +17,7 @@ body {
   
   /* Navigation styles */
   nav {
-    background-color: #d2d0d0;
+    background-color: #15202A;
     padding: 20px 0;
   }
   
@@ -36,7 +37,7 @@ body {
   .hero {
     text-align: center;
     padding: 60px 0;
-    background-color: #d2d0d0;
+    background-color: #15202A;
   }
   
   .hero h2 {
@@ -50,18 +51,15 @@ body {
   }
   
   /* Two-column grid styles */
-  .two-column-grid .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 20px;
+  .two-column-grid {
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: space-between; /* Space between the items */
+    gap: 40px; /* Space between the grid items */
   }
   
   .two-column-grid .grid-item {
-    flex: 1;
-    min-width: 0;
+    flex: 1; /* Allow items to grow and fill the space */
+    max-width: 100%; /* Ensure items do not exceed the container width */
   }
   
   /* Three-column grid styles */
@@ -87,7 +85,7 @@ body {
     align-items: center;
     text-align: center;
     min-height: 60px;
-    background-color: #d2d0d0;
+    background-color: #15202A; 
   }
   
   .footer-content p {
@@ -114,9 +112,8 @@ body {
   }
   
   @media (max-width: 768px) {
-    .two-column-grid .container {
-      flex-direction: column;
-      gap: 30px;
+    .two-column-grid {
+        flex-direction: column; /* Stack items vertically */
     }
   
     .three-column-grid .container {
@@ -133,17 +130,71 @@ body {
   /* New styles for elements present in HTML but not in original CSS */
   .cta-container {
     /* Add styles for the CTA container if needed */
+    background-color: #15202A; /* Light background color */
   }
   
   .price {
     /* Add styles for the price element if needed */
   }
   
+  /* New button styles inspired by Aleph Zero */
   .cta-button {
-    /* Add styles for the CTA buttons if needed */
+    background-color: #a8e6cf;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #81c784;
   }
   
   /* Styles for the contacts banner added by JavaScript */
   .contacts-banner {
     /* Add styles for the contacts banner if needed */
   }
+  
+  /* Innovators section styles */
+  #innovators {
+    background-color: #15202A; /* Light background color */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Centered text */
+  }
+  
+  .innovator-logos {
+    display: flex; /* Flexbox for logo alignment */
+    justify-content: center; /* Center logos */
+    gap: 20px; /* Space between logos */
+    flex-wrap: wrap; /* Wrap logos on smaller screens */
+  }
+  
+  .innovator-logos img {
+    max-width: 100px; /* Set a max width for logos */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Pricing section styles */
+  #pricing ul {
+    list-style-position: inside; /* Ensures bullets are inside the list */
+    padding-left: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  #pricing li {
+    margin-left: 20px; /* Adjust left margin for better alignment */
+    line-height: 1.5; /* Adjust line height for better spacing */
+  }
+
+    /*features-benefits-cta section styles */
+    #features-benefits-cta ul {
+      list-style-position: inside; /* Ensures bullets are inside the list */
+      padding-left: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+    }
+    
+    #features-benefits-cta li {
+      margin-left: 20px; /* Adjust left margin for better alignment */
+      line-height: 1.5; /* Adjust line height for better spacing */
+    }
